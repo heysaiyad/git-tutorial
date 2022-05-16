@@ -2,14 +2,18 @@
 using namespace std;
 
 class Multiply{
+//<<<<<<< HEAD
     int a, b;
+//=======
+
+//>>>>>>> devBranch
     public:
         void get(){
             cout << "Enter two numbers : ";
             cin >> a >> b;
         }
-        int result(){
-            return a * b;
+        void display(){
+            cout << "Result : " << a * b;
         }
 };
 
@@ -17,8 +21,7 @@ int main(){
     Multiply obj;
 
     obj.get();
-    int res = obj.result();
-    cout << "Result : " << res;
+    obj.display();
 
     return 0;
 }
