@@ -1,8 +1,24 @@
 #include<iostream>
 using namespace std;
+
+class Multiply{
+    int a, b;
+    public:
+        void get(){
+            cout << "Enter two numbers : ";
+            cin >> a >> b;
+        }
+        int result(){
+            return a * b;
+        }
+};
+
 int main(){
-    int a = 2;
-    int b = 3;
-    int mul = a *b;
-    cout<<mul<<endl;
+    Multiply obj;
+
+    obj.get();
+    int res = obj.result();
+    cout << "Result : " << res;
+
+    return 0;
 }
